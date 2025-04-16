@@ -88,7 +88,7 @@ class Scheduler {
 
         System.out.println("\nAll processes completed.");
         System.out.printf("Average Waiting Time: %.2f\n", (float) totalWaitingTime / (float) (totalTurnaroundTime > 0 ? totalTurnaroundTime / timeQuantum : 1));
-        System.out.printf("Average Turnaround Time: %.2f\n", (float) totalTurnaroundTime / (float) processCount); // processCount is 0 now, so we may need to store it before.
+        System.out.printf("Average Turnaround Time: %.2f\n", (float) totalTurnaroundTime / (float) processCount); 
     }
 
     public void removeProcess(int processId) {
